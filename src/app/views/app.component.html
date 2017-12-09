@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Hello {{name}}</h1>
+  <h2 *ngIf = 'appStatus'>Angular2Chat App</h2>
+</div>
+<div class="container">
+  <div class="row" >
+    <table class="table table-hover">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+      <tr *ngFor = 'let lst of appList'>
+        <td>{{ lst.ID }}</td>
+        <td>{{ lst.Name }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
